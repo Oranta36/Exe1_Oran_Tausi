@@ -5,13 +5,13 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ui.MainActivity">
 
     <ImageView
         android:id="@+id/img_road"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/img_road_background"
+        android:src="@drawable/img_road_background2"
         android:scaleType="centerCrop"
         />
 
@@ -21,13 +21,20 @@
         android:layout_height="wrap_content"
         android:text="0.0"
         android:textColor="@color/white"
-        android:textSize="40sp"
+        android:textSize="35sp"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="50dp"
         />
 
-
-
+    <TextView
+        android:id="@+id/lblCoins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:layout_toRightOf="@id/img_3Harts"
+        />
 
     <LinearLayout
         android:id="@+id/img_3Harts"
@@ -71,7 +78,6 @@
          android:layout_height="0dp"
          android:layout_weight="100"
          android:orientation="vertical"
-         android:padding="10dp"
          android:layout_margin="32dp">
 
             <LinearLayout
@@ -85,7 +91,8 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:padding="20dp"
+                    android:padding="15dp"
+                    android:visibility="invisible"
                     android:src="@drawable/ic_vic"
                     />
                 <ImageView
@@ -93,7 +100,8 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:padding="20dp"
+                    android:padding="15dp"
+                    android:visibility="invisible"
                     android:src="@drawable/ic_vic"
                     />
                 <ImageView
@@ -101,44 +109,28 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:padding="20dp"
+                    android:padding="15dp"
+                    android:visibility="invisible"
                     android:src="@drawable/ic_vic"
                     />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:orientation="horizontal">
-
                 <ImageView
                     android:id="@+id/img_vic4"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:padding="20dp"
+                    android:padding="15dp"
+                    android:visibility="invisible"
                     android:src="@drawable/ic_vic"
-                />
+                    />
                 <ImageView
                     android:id="@+id/img_vic5"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:padding="20dp"
+                    android:padding="15dp"
+                    android:visibility="invisible"
                     android:src="@drawable/ic_vic"
                     />
-                <ImageView
-                    android:id="@+id/img_vic6"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:padding="20dp"
-                    android:src="@drawable/ic_vic"
-                    />
-
-
 
             </LinearLayout>
 
@@ -149,11 +141,21 @@
                 android:orientation="horizontal">
 
                 <ImageView
+                    android:id="@+id/img_vic6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    android:visibility="invisible"
+                    android:src="@drawable/ic_vic"
+                />
+                <ImageView
                     android:id="@+id/img_vic7"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:padding="20dp"
+                    android:padding="15dp"
+                    android:visibility="invisible"
                     android:src="@drawable/ic_vic"
                     />
                 <ImageView
@@ -161,7 +163,8 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:padding="20dp"
+                    android:padding="15dp"
+                    android:visibility="invisible"
                     android:src="@drawable/ic_vic"
                     />
                 <ImageView
@@ -169,10 +172,24 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:padding="20dp"
+                    android:padding="15dp"
+                    android:visibility="invisible"
                     android:src="@drawable/ic_vic"
                     />
+                <ImageView
+                    android:id="@+id/img_vic10"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    android:visibility="invisible"
+                    android:src="@drawable/ic_vic"
+                    />
+
+
+
             </LinearLayout>
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -181,19 +198,12 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:id="@+id/img_vic10"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:padding="20dp"
-                    android:src="@drawable/ic_vic"
-                    />
-                <ImageView
                     android:id="@+id/img_vic11"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:padding="20dp"
+                    android:padding="15dp"
+                    android:visibility="invisible"
                     android:src="@drawable/ic_vic"
                     />
                 <ImageView
@@ -201,23 +211,17 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:padding="20dp"
+                    android:padding="15dp"
+                    android:visibility="invisible"
                     android:src="@drawable/ic_vic"
                     />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:orientation="horizontal">
-
                 <ImageView
                     android:id="@+id/img_vic13"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:padding="20dp"
+                    android:padding="15dp"
+                    android:visibility="invisible"
                     android:src="@drawable/ic_vic"
                     />
                 <ImageView
@@ -225,7 +229,8 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:padding="20dp"
+                    android:padding="15dp"
+                    android:visibility="invisible"
                     android:src="@drawable/ic_vic"
                     />
                 <ImageView
@@ -233,7 +238,8 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:padding="20dp"
+                    android:padding="15dp"
+                    android:visibility="invisible"
                     android:src="@drawable/ic_vic"
                     />
             </LinearLayout>
@@ -249,7 +255,8 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:padding="20dp"
+                    android:padding="15dp"
+                    android:visibility="invisible"
                     android:src="@drawable/ic_vic"
                     />
                 <ImageView
@@ -257,7 +264,8 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:padding="20dp"
+                    android:padding="15dp"
+                    android:visibility="invisible"
                     android:src="@drawable/ic_vic"
                     />
                 <ImageView
@@ -265,7 +273,26 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:padding="20dp"
+                    android:padding="15dp"
+                    android:visibility="invisible"
+                    android:src="@drawable/ic_vic"
+                    />
+                <ImageView
+                    android:id="@+id/img_vic19"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    android:visibility="invisible"
+                    android:src="@drawable/ic_vic"
+                    />
+                <ImageView
+                    android:id="@+id/img_vic20"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    android:visibility="invisible"
                     android:src="@drawable/ic_vic"
                     />
             </LinearLayout>
@@ -277,11 +304,127 @@
                 android:orientation="horizontal">
 
                 <ImageView
+                    android:id="@+id/img_vic21"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    android:visibility="invisible"
+                    android:src="@drawable/ic_vic"
+                    />
+                <ImageView
+                    android:id="@+id/img_vic22"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    android:visibility="invisible"
+                    android:src="@drawable/ic_vic"
+                    />
+                <ImageView
+                    android:id="@+id/img_vic23"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    android:visibility="invisible"
+                    android:src="@drawable/ic_vic"
+                    />
+                <ImageView
+                    android:id="@+id/img_vic24"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    android:visibility="invisible"
+                    android:src="@drawable/ic_vic"
+                    />
+                <ImageView
+                    android:id="@+id/img_vic25"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    android:visibility="invisible"
+                    android:src="@drawable/ic_vic"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img_vic26"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    android:visibility="invisible"
+                    android:src="@drawable/ic_vic"
+                    />
+                <ImageView
+                    android:id="@+id/img_vic27"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    android:visibility="invisible"
+                    android:src="@drawable/ic_vic"
+                    />
+                <ImageView
+                    android:id="@+id/img_vic28"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    android:visibility="invisible"
+                    android:src="@drawable/ic_vic"
+                    />
+                <ImageView
+                    android:id="@+id/img_vic29"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    android:visibility="invisible"
+                    android:src="@drawable/ic_vic"
+                    />
+                <ImageView
+                    android:id="@+id/img_vic30"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    android:visibility="invisible"
+                    android:src="@drawable/ic_vic"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img_carLeftLeft"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    android:src="@drawable/ic_racing_car"
+                    android:rotation="270"
+                    />
+                <ImageView
                     android:id="@+id/img_carLeft"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:padding="17dp"
+                    android:padding="15dp"
                     android:src="@drawable/ic_racing_car"
                     android:rotation="270"
                     />
@@ -290,7 +433,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:padding="17dp"
+                    android:padding="15dp"
                     android:src="@drawable/ic_racing_car"
                     android:rotation="270"
                     />
@@ -299,7 +442,16 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:padding="17dp"
+                    android:padding="15dp"
+                    android:src="@drawable/ic_racing_car"
+                    android:rotation="270"
+                    />
+                <ImageView
+                    android:id="@+id/img_carRightRight"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="15dp"
                     android:src="@drawable/ic_racing_car"
                     android:rotation="270"
                     />

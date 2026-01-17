@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MenuActivity">
+
+    <ImageView
+        android:id="@+id/img_road"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/img_menu_background"
+        android:scaleType="centerCrop"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/btnMenu1"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:orientation="vertical"
+        android:layout_marginTop="300dp"
+        android:layout_centerHorizontal="true"
+        >
+
+
+    <LinearLayout
+        android:id="@+id/btnMenu"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+        <EditText
+            android:id="@+id/edtPlayerName"
+            android:layout_width="250dp"
+            android:layout_height="0dp"
+            android:hint="Enter your name"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textColorHint="#FFFFFF"
+            android:background="@drawable/edit_text_bg"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnArrow"
+            android:layout_width="250dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Arrows"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/Orange" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSensors"
+            android:layout_width="250dp"
+            android:layout_height="0dp"
+            android:layout_below="@+id/edtPlayerName"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:text="Sensors"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/Orange" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/switchSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Fast mode"
+            android:textSize="15sp"
+
+            android:textColor="@color/black"
+            android:paddingStart="30dp"
+            android:layout_centerInParent="true"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            app:thumbTint="@color/Orange"
+            app:trackTint="#80FFA500" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnTopTen"
+            android:layout_width="250dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_below="@+id/edtPlayerName"
+            android:layout_centerHorizontal="true"
+            android:text="Top 10"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/Orange"
+            />
+
+    </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
